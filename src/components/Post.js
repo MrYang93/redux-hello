@@ -10,10 +10,10 @@ class Post extends Component {
       <Provider store={store}>
         <div>
           <div className="top  clearfix">
-            <PostBody id={ this.props.params.postId } />
+            <PostBody postId={ this.props.params.postId } />
           </div>
           <div className="bottom clearfix">
-            <CommentBox />
+            <CommentBox postId={this.props.params.postId} />
           </div>
         </div>
       </Provider>
