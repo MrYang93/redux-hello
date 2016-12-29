@@ -10,7 +10,7 @@ class Post extends Component {
       <Provider store={store}>
         <div>
           <div className="top  clearfix">
-            <PostBody />
+            <PostBody id={ this.props.params.postId } />
           </div>
           <div className="bottom clearfix">
             <CommentBox />

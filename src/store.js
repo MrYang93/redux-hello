@@ -1,21 +1,30 @@
 import { createStore } from 'redux';
+import rootReducer from './reducers';
+
 
 let comments = [
   "hello1",
   "hello2"
 ]
 
-function commentReducer(state = [], action) {
-  // console.log(state, action);
-  switch (action.type) {
-    case 'ADD_COMMENT':
-      // console.log([...state, action.comment])
-      return [...state, action.comment]
-    default:
-      return state;
+const posts = [
+  {
+    id: 1,
+    title: 'redux-hello',
+    likes: 3
+  },
+  {
+    id: 2,
+    title: 'redux-baby',
+    likes: 6
   }
+]
+
+const defaultState = {
+  posts,
+  comments
 }
 
-const store = createStore(commentReducer, comments);
+const store = createStore(rootReducer, defaultState);
 
 export default store;
