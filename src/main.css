@@ -67,17 +67,25 @@ body {
   position: relative;
 }
 
-.post-body .comment-num {
-  position: absolute;
-  right: 20px;
+.post-body .num {
   font-weight: bold;
-  bottom: 20px;
   width: 80px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   background-color: rgb(242, 244, 246);
   color: rgb(76, 87, 101);
+}
+
+.post-body .comment-num {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.post-body .likes-num {
+  position: absolute;
+  right: 120px;
+  bottom: 20px;
 }
 
 .comment {
