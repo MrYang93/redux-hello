@@ -7,7 +7,6 @@ import store from '../store';
 class Post extends Component {
   render(){
     return(
-      <Provider store={store}>
         <div>
           <div className="top  clearfix">
             <PostBody postId={ this.props.params.postId } />
@@ -16,7 +15,6 @@ class Post extends Component {
             <CommentBox postId={this.props.params.postId} />
           </div>
         </div>
-      </Provider>
     )
   }
 }
