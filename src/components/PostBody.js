@@ -10,9 +10,13 @@ class PostBody extends Component {
   render(){
     return(
       <div className="post-body">
+        <div className="title">
+          { this.props.posts[this.props.postId - 1].title }
+        </div>
         <div className="likes-num num" onClick={this.handleClick.bind(this)}>
           { this.props.posts[this.props.postId - 1].likes } 喜欢
         </div>
+
         <div className="comment-num num">
           { this.props.comments[this.props.postId].length } 评论
         </div>
