@@ -84,6 +84,7 @@ body {
 }
 .post-body .likes-num {
   position: absolute;
+  cursor: pointer;
   right: 120px;
   bottom: 20px;
 }
